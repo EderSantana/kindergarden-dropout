@@ -1,0 +1,3 @@
+[submodule "Variational-Autoencoder"]
+	path = Variational-Autoencoder
+	url = https://github.com/y0ast/Variational-Autoencoder.git
