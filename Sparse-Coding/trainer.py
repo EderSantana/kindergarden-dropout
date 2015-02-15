@@ -9,7 +9,7 @@ class Trainer(object):
         
         cost = self.sc.cost() 
         self.opt = top.Optimizer(self.sc.model.get_params(), cost,
-                input=self.sc.s, method='sgd', learning_rate=0.06)
+                input=self.sc.s, method='sgd', learning_rate=0.006)
     
     def run(self):
         i = 0

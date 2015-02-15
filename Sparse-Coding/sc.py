@@ -40,7 +40,7 @@ class SC(object):
         rnorm = 0.
         for m in self.model.get_params():
             rnorm += T.sqr(m).sum()
-        return error + .1 * l1 + .5 * rnorm
+        return error + .1 * l1 + .01 * rnorm
 
     def reconstruct(self, state):
         y = self.model.fprop(self.z)
